@@ -17,3 +17,8 @@ This is an app to simulate a managing of online coffee shop
 - LocalStorage
 - Lists and keys
 - Props and a few ways do work with that
+
+### We are using typescript, vod, styled-components
+
+Feel free to clone/fork this repository for your own use. :thumbsup:
+
