@@ -1,0 +1,25 @@
+import { BuyContainer, CoffeeCardContainer } from "./CoffeeCard.styles";
+import CoffeeImg from "../../../../assets/Coffee.svg";
+import ShoppingImg from "../../../../assets/ShoppingCartSimple.svg";
+export function CoffeeCard() {
+  return (
+    <CoffeeCardContainer>
+      <img src={CoffeeImg} />
+      <span>TRADICIONAL</span>
+      <span>Expresso Tradicional</span>
+      <span>O tradicional café feito com água quente e grãos moídos</span>
+      <BuyContainer>
+        <span>R$</span>
+        <span>9,90</span>
+        <div>
+          <span>-</span>
+          <span>1</span>
+          <span>+</span>
+          
+          <img src={ShoppingImg} />
+          
+        </div>
+      </BuyContainer>
+    </CoffeeCardContainer>
+  );
+}
