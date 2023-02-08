@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const CoffeeListContainer = styled.div`
-  span:only-of-type {
+  #title {
     font-family: "Baloo 2";
     font-style: normal;
     font-weight: 800;

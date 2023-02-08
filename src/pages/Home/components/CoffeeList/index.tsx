@@ -1,11 +1,11 @@
-import { CoffeeCard } from "./CofeeCard";
+import { CoffeeCard } from "../../../../components/CoffeeCard";
 import { CoffeeListContainer, List } from "./styles";
 
 export function CoffeeList() {
   return (
     <>
       <CoffeeListContainer>
-        <span>Nossos cafés</span>
+        <span id="title">Nossos cafés</span>
         <List>
           <CoffeeCard />
           <CoffeeCard />
