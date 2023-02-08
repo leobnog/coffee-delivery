@@ -13,6 +13,10 @@ export const CoffeeCardContainer = styled.div`
   display: flex;
   flex-direction: column;
 
+  img {
+    margin-top: -20px;
+  }
+
   img:first-child {
     width: 7.5rem;
     height: 7.5rem;

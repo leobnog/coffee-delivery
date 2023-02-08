@@ -1,19 +1,24 @@
 import { CoffeeCard } from "./CofeeCard";
-import { CoffeeListContainer } from "./styles";
+import { CoffeeListContainer, List } from "./styles";
 
 export function CoffeeList() {
   return (
-    <CoffeeListContainer>
-      <CoffeeCard />
-      <CoffeeCard />
-      <CoffeeCard />
-      <CoffeeCard />
-      <CoffeeCard />
-      <CoffeeCard />
-      <CoffeeCard />
-      <CoffeeCard />
-      <CoffeeCard />
-      <CoffeeCard />
-    </CoffeeListContainer>
-  )
+    <>
+      <CoffeeListContainer>
+        <span>Nossos cafés</span>
+        <List>
+          <CoffeeCard />
+          <CoffeeCard />
+          <CoffeeCard />
+          <CoffeeCard />
+          <CoffeeCard />
+          <CoffeeCard />
+          <CoffeeCard />
+          <CoffeeCard />
+          <CoffeeCard />
+          <CoffeeCard />
+        </List>
+      </CoffeeListContainer>
+    </>
+  );
 }

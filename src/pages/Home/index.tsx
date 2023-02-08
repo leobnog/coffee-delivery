@@ -1,27 +1,33 @@
-import { IntroContainer, ItemsContainer } from "./styles";
+import {
+  IntroContainer,
+  ItemRow,
+  ItemsContainer,
+  LeftContainer,
+  TitleContainer,
+} from "./styles";
 import IntroImg from "../../assets/Intro.svg";
 import { CoffeeList } from "./components/CoffeeList";
+import { IconItem } from "../../components/IconItem";
+
 export function Home() {
   return (
     <>
       <IntroContainer>
-        <div>
-          <span>Encontre o café perfeito para qualquer hora do dia</span>
-          <span>
-            Com o Coffee Delivery você recebe seu café onde estiver, a qualquer
-            hora
-          </span>
+        <LeftContainer>
+          <TitleContainer>
+            <span>Encontre o café perfeito para qualquer hora do dia</span>
+            <span>
+              Com o Coffee Delivery você recebe seu café onde estiver, a
+              qualquer hora
+            </span>
+          </TitleContainer>
           <ItemsContainer>
-            <div>
-              <span>Compra simples e segura</span>
-              <span>Embalagem mantém o café intacto</span>
-            </div>
-            <div>
-              <span>Entrega rápida e rastreada</span>
-              <span>O café chega fresquinho até você</span>
-            </div>
+            <IconItem variant="shoppingCart" label="Compra simples e segura" />
+            <IconItem variant="timer" label="Entrega rápida e rastreada" />
+            <IconItem variant="package" label="Embalagem mantém o café intacto" />
+            <IconItem variant="coffee" label="O café chega fresquinho até você" />
           </ItemsContainer>
-        </div>
+        </LeftContainer>
         <img src={IntroImg} />
       </IntroContainer>
       <CoffeeList />
