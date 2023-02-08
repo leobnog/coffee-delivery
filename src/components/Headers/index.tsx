@@ -4,9 +4,9 @@ import {
   HeaderLeft,
   HeaderRight,
 } from "./styles";
-import Logo from "../../../assets/Logo.svg";
-import Cart from "../../../assets/Cart.svg";
-import Local from "../../../assets/Local.svg";
+import Logo from "../../assets/Logo.svg";
+import Cart from "../../assets/Cart.svg";
+import Local from "../../assets/Local.svg";
 export function Header() {
   return (
     <HeaderContainer>
