@@ -1,20 +1,5 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 
-export type IconItemVariant =
-  | "cart"
-  | "package"
-  | "timer"
-  | "coffee";
-interface IconItemProps {
-  variant: IconItemVariant;
-}
-const iconItemVariants = {
-  cart: 'ColorBrandYellowDark',
-  secondary: "blue",
-  success: "green",
-  danger: "red",
-  neutral: "gray",
-};
 export const IntroContainer = styled.div`
   height: 34rem;
   display: flex;
@@ -37,46 +22,6 @@ export const LeftContainer = styled.div`
   display: flex;
   flex-direction: column;
 `;
-
-export const ItemRow = styled.div`
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  width: 100%;
-  border: solid;
-  gap: 12px;
-`;
-
-// export const Item = styled.div`
-//   display: flex;
-//   flex-direction: row;
-//   align-items: center;
-//   justify-content: flex-start;
-//   gap: 12px;
-//   height: 32px;
-//   margin-bottom: 20px;
-
-//   div:first-of-type {
-//     justify-content: center;
-//     align-items: center;
-//     padding: 8px;
-//     width: 32px;
-//     height: 32px;
-//     background: #c47f17;
-//     border-radius: 50%;
-//     margin: 0;
-//     margin-bottom: 0px;
-//   }
-
-//   span {
-//     font-family: "Roboto";
-//     font-style: normal;
-//     font-weight: 400;
-//     font-size: 16px;
-//     line-height: 130%;
-//     color: #574f4d;
-//   }
-// `;
 
 export const TitleContainer = styled.div`
   display: flex;
@@ -115,11 +60,3 @@ export const ItemsContainer = styled.div`
   justify-content: space-between;
   padding-bottom: 6.75rem;
 `;
-
-// export const IconItem = styled.div<IconItemProps>`
-//    ${(props) => {
-//     return css`
-//       background-color: ${props.theme.ColorBrandYellowDark};
-//     `;
-//   }}
-// `;

@@ -1,6 +1,5 @@
 import {
   IntroContainer,
-  ItemRow,
   ItemsContainer,
   LeftContainer,
   TitleContainer,
